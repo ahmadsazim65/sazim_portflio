@@ -1,31 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Colorful Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS ফাইল লিঙ্ক -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miraz Ahmad Sazim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    
-    <section class="about">
-        <h2>About Me</h2>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-5 bg-black text-white shadow-lg sticky top-0 z-50">
+    <h1 class="text-xl font-bold">Miraz Ahmad <span class="text-green-500">Sazim</span></h1>
+    <ul class="flex space-x-6 text-sm">
+      <li><a href="#home" class="hover:text-orange-500">Home</a></li>
+      <li><a href="#experience" class="hover:text-orange-500">Experiences</a></li>
+      <li><a href="#skills" class="hover:text-orange-500">Skills</a></li>
+      <li><a href="#education" class="hover:text-orange-500">Education</a></li>
+      <li><a href="#services" class="hover:text-orange-500">Services</a></li>
+      <li><a href="#contact" class="hover:text-orange-500">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="flex flex-col-reverse lg:flex-row items-center justify-between min-h-screen px-10 py-20">
+    <div class="max-w-xl">
+      <h2 class="text-4xl font-bold mb-4">Hi, It's <span class="text-green-500">Sazim</span></h2>
+      <p class="text-lg mb-4">I'm a SEO Expert</p>
+      <p class="text-sm text-gray-300 mb-6">I’m passionate about full-stack development and design. I love building beautiful and scalable web applications using modern tech.</p>
+      <div class="flex flex-wrap items-center space-x-4 mb-4 text-lg">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/ahmad.sazim.98/" target="_blank" class="hover:text-blue-500">
+          <i class="fab fa-facebook-square"></i> Facebook
+        </a>
         
-        <!-- এখানে ছবি যোগ করা হয়েছে -->
-        <img src="image/my-photo.jpg.jpg" alt="Your Photo" class="profile-img">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/a.sazim/" target="_blank" class="hover:text-pink-500">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/miraz-ahmad-sazim-831545230/" target="_blank" class="hover:text-blue-400">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-300">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/8801846896664" target="_blank" class="hover:text-green-400">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+  
+      <!-- Hire Me Button wrapped with WhatsApp link -->
+      <a href="https://wa.me/8801846896664" target="_blank">
+        <button class="px-5 py-2 border border-white rounded hover:bg-white hover:text-black">Hire Me...</button>
+      </a>
+    </div>
+  
+    <!-- Profile Image -->
+    <div class="mb-10 lg:mb-0">
+      <img src="sazim.png" alt="Sazim" class="w-64 h-72-full border-1 border-white object-cover">
+    </div>
+  </div>  
+    
+  
 
-        <p><strong>Name:</strong> Miraz Ahmad Sazim</p>
-        <p><strong>Profession:</strong> Web Developer & Digital Marketer</p>
-        <p><strong>Experience:</strong> 4 Years Working Experince</p>
-        <p><strong>Skills:</strong> HTML, CSS, JavaScript, SEO, Digital Marketing</p>
-        <p><strong>Contact:</strong> mdsazim55@gamail.com</p>
-    </section>
+  <!-- Experiences Section -->
+  <section id="experience" class="min-h-screen p-10 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">My Experiences</h2>
+      <p class="text-gray-300 mb-4">I have worked with several agencies and startups on digital marketing, SEO optimization, and web analytics.</p>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="images/experience.jpg" alt="Experience" class="rounded-lg shadow-lg">
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
+  <!-- Skills Section -->
+  <section id="skills" class="min-h-screen p-10 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">My Skills</h2>
+      <p class="text-gray-300 mb-4">HTML, CSS, JavaScript, SEO, TailwindCSS, React, Node.js and more.</p>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="images/skills.jpg" alt="Skills" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="min-h-screen p-10 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">My Education</h2>
+      <p class="text-gray-300 mb-4">I have completed my graduation in Computer Science with a focus on web and data technologies.</p>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="images/education.jpg" alt="Education" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="min-h-screen p-10 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">Services I Offer</h2>
+      <p class="text-gray-300 mb-4">SEO Audit, Keyword Research, Full Website Optimization, and Content Strategy.</p>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="images/services.jpg" alt="Services" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="bg-black text-white py-20 px-6 lg:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    
+    <!-- Left Side: Heading and Text -->
+    <div class="space-y-6">
+      <h2 class="text-5xl font-serif font-bold">Contact <br> Me</h2>
+      <p class="text-gray-300 max-w-md">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+      <img src="images/star-icon.png" alt="Decoration" class="w-16 mt-4"> <!-- Optional decorative icon -->
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div>
+      <h3 class="text-2xl font-serif font-semibold mb-6">Send a Message</h3>
+      <form class="space-y-6">
+        <input type="text" placeholder="Name" class="w-full px-4 py-3 bg-black border-b border-white focus:outline-none focus:border-orange-500 placeholder-white" required>
+        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 bg-black border-b border-white focus:outline-none focus:border-orange-500 placeholder-white" required>
+        <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 bg-black border-b border-white focus:outline-none focus:border-orange-500 placeholder-white" required></textarea>
+        <button type="submit" class="bg-white text-black px-6 py-2 font-semibold hover:bg-orange-500 hover:text-white transition-all">SUBMIT</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center text-gray-400 py-6">
+    <p>&copy; 2025 Miraz Ahmad Sazim. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">↑</a>
+
 </body>
 </html>
